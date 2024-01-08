@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <h1 class="header__title">Recepi Finder</h1>
+                <div class="search__form-wrapper">
+                    <form name="searchFood">
+                        <div class="search__food">
+                            <div class="search__input">
+                                <input type="text" name="searchFoodInput" placeholder="Enter The Name Of The Food">
+                            </div>
+                            <div class="search__button">
+                                <button type="submit" id="searchBtn"><i class='bx bx-search'></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="favorites__item-block">
+                    <i class='bx bxs-bookmark-star' style='color:orange'></i>
+                </div>
+                <div class="search__block-button">
+                    <button type="button" class="btnMeal" id="btnAllMeals">Meals</button>
+                    <button type="button" class="btnMeal" id="btnSort">Sort Meals</button>
+                    <button type="button" class="btnMeal" id="btnSortRating">Sort by Rating</button>
+                </div>
+                <div class="error__block">
+                    <h1>No Meals</h1>
+                </div>
+                <div class="loader"></div>
+            </header>
+            <main class="main__content">
+                <section class="recipe__food">
+                    <div class="block__food-cards">
+                        <!-- <div class="card__food">
+                            <div class="favorites__icon">
+                                <i class='bx bxs-bookmark-star' style='color:red'></i>
+                            </div>
+                            <div class="poster">
+                                <img src="./img/pizza.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <h3>Pizza</h3>
+                                <p>Calories: 200</p>
+                            </div>
+                            <div class="view__recipe-btn">
+                                <button type="button">View Recipe</button>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="information__food-block"></div>
+                    <div class="favorites__block"></div>
+                    <div class="favorites__error"></div>
+                   <div class="pagination"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
